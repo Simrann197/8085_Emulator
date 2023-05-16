@@ -16,4 +16,5 @@ int registerNumber(string regis)
         return 5;
     if (regis == "L")
         return 6;
+    return -1;
 }

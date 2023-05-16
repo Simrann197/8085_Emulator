@@ -1,4 +1,4 @@
-#include "MASTER.h"
+#include "../HeaderFiles/tools.h"
 /* This function takes in a complete command as an input and breaks it in 
 	operand and opcode and checks the size of the command */
 	

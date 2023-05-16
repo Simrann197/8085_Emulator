@@ -19,4 +19,5 @@ int opcode(string code){
     if(code == "MVI") return 2;
     if(code == "ADI") return 2;
     if(code == "HLT") return 1;
+    return 0;
 }
