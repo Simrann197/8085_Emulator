@@ -20,6 +20,7 @@ string execution(string command, string Registers[], bool flag[], map<string,str
 void executionDebugger(string pc, map<string, string> &Memory, vector<string> &sequence, bool flag[], string registers[]);
 void executionNormal(string pc, map<string, string> &Memory, vector<string> &sequence, bool flag[], string registers[]);
 string hexSub16bit(string arg1,string arg2,bool flag[],bool carry);
+void display(string registers[],bool flags[]);
 
 #endif
 

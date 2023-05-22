@@ -1,2 +1,3 @@
 # 8085_Emulator
-try try try
+# TO RUN THE PROGRAM
+mingw32-make -f Makefile

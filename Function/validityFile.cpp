@@ -64,7 +64,6 @@ bool validityFile(string command){
 	const char *delimiter = " ,";
 	char *pch = strtok (var,delimiter);
 	while(pch != NULL){
-		
 		tokens.push_back(pch);
 		pch = strtok(NULL,delimiter);
 	}

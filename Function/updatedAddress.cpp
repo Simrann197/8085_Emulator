@@ -14,7 +14,7 @@ string updatedAddress(string PC,map<string,string>&Memory){
 		char *temporary = (char*)partition;
 		const char *delimiter = " ,";
 		char *part = strtok(temporary,delimiter);
-		 opcode = part;
+		opcode = part;
 	}
 	int n = operationSize(opcode);
 	string result;

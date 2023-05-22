@@ -85,13 +85,11 @@ void executionDebugger(string pc, map<string, string> &Memory, vector<string> &s
 		{
 			if (pc != "")
 			{
-
+				for(auto it:breakpoints)	cout<<it<<endl;
 				if (breakpoints.empty())
 				{
-
 					while (true)
 					{
-
 						if (Memory[pc] == "HLT")
 						{
 
@@ -104,16 +102,14 @@ void executionDebugger(string pc, map<string, string> &Memory, vector<string> &s
 				}
 				else
 				{
-
 					it = breakpoints.begin();
 					int var = *it;
-					while (pc != sequence[var])
-					{
-
+					while (pc != sequence[var]){
 						pc = execution(Memory[pc], registers, flag, Memory, pc);
 					}
 					breakpoints.erase(it);
 				}
+				display(registers,flag);
 			}
 			else
 			{

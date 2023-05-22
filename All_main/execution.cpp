@@ -31,7 +31,7 @@ string nextAddress(string str,int n){
 string execution(string command, string Registers[], bool flag[], map<string,string>&memory,string programCounter){
 
 	vector<string> commandPart;
-	//string command = memory[programCounter];
+	command = memory[programCounter];
 	string inst;
 	int commandSize;
 	const char *partition = command.c_str();
@@ -40,13 +40,15 @@ string execution(string command, string Registers[], bool flag[], map<string,str
 	char *part = strtok(temporary,delimiter);
 
 	while(part!=NULL){
-
 		inst = part;
 		commandPart.push_back(inst);
 		part = strtok(NULL,delimiter);
 
 	}
-
+	for(int i=0;i<commandPart.size();i++){
+		cout<<commandPart[i]<<" ";
+	}
+	cout<<endl;
 	if(commandPart[0] == "MOV"){
 
 			MOV(commandPart[1],commandPart[2],Registers,flag,memory);
