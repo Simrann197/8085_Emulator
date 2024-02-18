@@ -1,3 +1,2 @@
 # 8085_Emulator
-# TO RUN THE PROGRAM
-mingw32-make -f Makefile
+This C++ project is a simulator for the 8085, with debugging features and support for LHLD, MOVE, STORE, and other operations. It provides a virtual environment in which users may create, run, and debug assembly language programs for the 8085 microprocessor. Programmers may view register and memory states, simulate program execution, and effectively identify faults in their console panel.
